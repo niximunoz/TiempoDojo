@@ -1,0 +1,86 @@
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9fc5f8;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+.subtitle-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.container-cards{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.cards{
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+}
+.weather-img{
+    height: 160px;
+    border-radius: 50%;
+}
+.degress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: bold;
+}
+.low{
+    color: blue;
+}
+.high{
+    color: red;
+}
+.cookies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    margin-top: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cookie-img{
+    height: 80px;
+    padding: 20px;
+}
+.btn-cookies{
+    height: 30px;
+    width: 130px;
+    margin: 20px;
+    background-color: #9fc5f8;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    box-shadow: 5px 5px black;
+}
+li{
+    cursor:pointer;
+}

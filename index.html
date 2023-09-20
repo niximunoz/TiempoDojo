@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="title-page">Dojo Weather</h1>
+        <ul class="nav-links">
+            <li onclick="cityAlert()">Burbank</li>
+            <li onclick="cityAlert()">Chicago</li>
+            <li onclick="cityAlert()">Dallas</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="subtitle-container">
+            <h2>San Jose</h2>
+            <div>Show temperature in
+                <select onchange="changeDegrees(this)">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-cards">
+            <div class="cards">
+                <div>
+                    <h2>Today</h2>
+                    <img class="weather-img" src="./assets/some_rain.png" alt="">
+                    <h4>some rain</h4>
+                </div>
+                <div class="degress">
+                    <span id="degrees1" class="high">24°</span>
+                    <span id="degrees2" class="low">18°</span>
+                </div>
+            </div>
+            <div class="cards">
+                <div>
+                    <h2>Tomorrow</h2>
+                    <img class="weather-img" src="./assets/some_sun.png" alt="">
+                    <h4>some sun</h4>
+                </div>
+                <div class="degress">
+                    <span id="degrees3" class="high">27°</span>
+                    <span id="degrees4" class="low">19°</span>
+                </div>
+
+            </div>
+            <div class="cards">
+                <div>
+                    <h2>Friday</h2>
+                    <img class="weather-img" src="./assets/some_clouds.png" alt="">
+                    <h4>some clouds</h4>
+                </div>
+                <div class="degress">
+                    <span id="degrees5" class="high">21°</span>
+                    <span id="degrees6" class="low">16°</span>
+                </div>
+
+            </div>
+            <div class="cards">
+                <div>
+                    <h2>Saturday</h2>
+                    <img class="weather-img" src="./assets/some_sun.png" alt="">
+                    <h4>some sun</h4>
+                </div>
+                <div class="degress">
+                    <span id="degrees7" class="high">26°</span>
+                    <span id="degrees8" class="low">21°</span>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="container cookies">
+        <img class="cookie-img" src="./assets/cookie.png" alt="">
+        <div class="texto-cookie">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button class="btn-cookies" onclick="AcceptCokkies(this)">I Accept</button>
+        
+    </div>
+
+
+<script src="./js/index.js"></script>
+</body>
+
+</html>
